@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "73e8370d-d7bb-44fb-a9c2-380cdf72498c",
+		"name": "Laravel9-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20658763"
+	},
+	"item": [
+		{
+			"name": "User-Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Tester",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tester@test.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "021123456789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jakarta Timur",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Testing",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tester@test.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "021123456789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jakarta Timur",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "_method",
+							"value": "DELETE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Hadoy",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "hadoy",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hadoy@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "021123456789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jakarta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5ODI3NzJhMy04NjQ2LTQxMTgtOGRmOC00NjM3ZDk4N2Q0ODUiLCJqdGkiOiI1NTE3MzEwNWIzNmZhNTE4ZGY1N2FhNjczNDRlYjQ2ODEyZTI1MjZmNGQ1ZmNlMDZiYzMyNjI2OTJhZWMwZDUyYjgwYmNjMjM4ZThjNmM0NSIsImlhdCI6MTY3Mjk1MTk2NC4wMDA4NjgsIm5iZiI6MTY3Mjk1MTk2NC4wMDA4NzUsImV4cCI6MTcwNDQ4Nzk2My45OTE3MzUsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.KpQpQxXLW2bz3wQ0M9s8ox98L6ByHcesGOtSwmAFqQXVj91pZx-wRPsZSXuLRGDs7pwFH8Qp3Yad7ehuZ-f1GiwOMS-9IAGUw-LjDDMFQ2ZyVOiNzQPa0BbM6qv7mdzxcJ1JIawBLdXD3ydLciWiYxYMQpQDEGgwk99R87MF707plAR1cwt5u89WMmcD5GtBfufGTjgmJccnUnwevbqoa8I9BmXbavQmu3h1L_jW0qxsJq26vLXOAIxTxvEjsO6Wm5IcbEEP-rKptezQJdBxkeH6PsKqpwuyCsAGY19OODKc_gutLt1Sdzyk4umRyS8ExPA1ZEbkvCzqNZ4ukctAGX3dWWVdutWwH3XEMdvVFixfynZl8VcUegrNzNoAgKM8s8pzfdw4ROgFe-tcA2YaqFyJLkP_UYJLUem0PJUt0OXnTolYfkTPUFtHsDcnxhKASmjMHd4Jvlrgg-cBrFrU76oPm-G9YEn5ZgezO6MhCUe1RbmJeLRlfavKisglbuZGa5t6WYzg9y3Wx-VSp34-tG00J4Hk7Pcrk2HARS9Y_EFHjxeKOLF-X0agHC7Cx_snCd5q3h4rY6Yb4-RRhhyw-9ZpZMgeRmX3HFR8XLAanktLYJnjWhC6k4aI6isFGX-LKCSAPbLUgcHoFJlVzh31froU7HFV22pLsbzzF0x0qzg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "92493e179698997fe46a560aa77bf1e4ad0cfe497a274cd655c7b3640b634a7f701adcd37a034c98",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
